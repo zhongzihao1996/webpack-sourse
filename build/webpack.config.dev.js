@@ -41,28 +41,28 @@ module.exports = {
     ],
   },
   plugins: [
-    // new HtmlWebpackPlugin({
-    //   filename: path.resolve(__dirname, '../dist/bundle.html'),
-    //   template: path.resolve(__dirname, '../static/test.html'),
-    //   inject: true,
-    //   minify: {
-    //     removeComments: true,
-    //     collapseWhitespace: true,
-    //     removeAttributeQuotes: true
-    //   },
-    //   // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-    //   chunksSortMode: 'dependency'
-    // }),
-    new EmitTemplatePlugin(
-      {
-        template: path.resolve(__dirname, '../static/test.html'),
-        output: path.resolve(__dirname, '../dist/bundle.html'),
-        params: {
-          title: 'test',
-          author: 'ZZH'
-        }
-      }
-    )
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, '../dist/bundle.html'),
+      template: path.resolve(__dirname, '../static/test.html'),
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      },
+      // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+      chunksSortMode: 'dependency'
+    }),
+    // new EmitTemplatePlugin(
+    //   {
+    //     template: path.resolve(__dirname, '../static/test.html'),
+    //     output: path.resolve(__dirname, '../dist/bundle.html'),
+    //     params: {
+    //       title: 'test',
+    //       author: 'ZZH'
+    //     }
+    //   }
+    // ),
   ],
 
   // When importing a module whose path matches one of the following, just

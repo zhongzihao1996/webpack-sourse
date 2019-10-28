@@ -15,10 +15,12 @@
     "colors": "^1.4.0",
     "fs": "0.0.1-security",
     "html-webpack-plugin": "^3.2.0",
+    "jszip": "^3.2.2",
     "loader-utils": "^1.2.3",
     "path": "^0.12.7",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "webpack-sources": "^1.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
