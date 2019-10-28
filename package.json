@@ -5,7 +5,6 @@
   "scripts": {
     "build": "webpack --config build/webpack.config.prod.js",
     "dev": "webpack --config build/webpack.config.dev.js",
-    "test": "webpack --config test/webpack.config.test.js",
     "watch": "webpack --watch"
   },
   "author": "",
